@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Freebie - Dashboard',
-  description: 'Dashboard - Freebie com Next.js e Tailwind',
+  description: 'Dashboard - Next.JS e Tailwind CSS',
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
           <Sidebar />
           <div className='flex-1'>
             <Navbar />
-            <main className='p-4'>{children}</main>
+            <main className='p-4 bg-zinc-100'>{children}</main>
           </div>
         </main>
       </body>

@@ -35,17 +35,17 @@ function Profile({ avatar }: { avatar: string }) {
           text-zinc-900 [--anchor-gap:var(--spacing-1)] focus:outline-none'
         >
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <User size={20} /> Perfil
             </button>
           </MenuItem>
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <Settings size={20} /> Configurações
             </button>
           </MenuItem>
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <LogOut size={20} /> Sair
             </button>
           </MenuItem>

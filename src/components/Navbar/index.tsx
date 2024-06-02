@@ -1,20 +1,39 @@
-import { BellDot, MessageSquareDot, Search } from 'lucide-react';
-import Image from 'next/image';
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
+import { BellDot, MessageSquareDot, Moon, Search, Sun } from 'lucide-react';
+
 import Flags from '../Flags';
 import Profile from '../Profile';
 
 const Navbar: React.FC = () => {
+  const [open, setOpen] = useState(true);
+
   return (
-    <nav className='w-full bg-white text-zinc-900 p-4 shadow'>
+    <nav className='w-full bg-white text-zinc-900 p-4 shadow-xl'>
       <div className='flex justify-between items-center'>
         <div>
-          <Search />
+          <Search size={20} className='hover:text-purple-500 cursor-pointer' />
         </div>
         <div className='flex justify-end items-center gap-4'>
           <Flags />
-          <MessageSquareDot />
-          <BellDot />
+          {open ? (
+            <Sun
+              size={20}
+              className='cursor-pointer hover:text-purple-500'
+              onClick={() => setOpen(!open)}
+            />
+          ) : (
+            <Moon
+              size={20}
+              className='cursor-pointer hover:text-purple-500'
+              onClick={() => setOpen(!open)}
+            />
+          )}
+          <MessageSquareDot
+            size={20}
+            className='hover:text-purple-500 cursor-pointer'
+          />
+          <BellDot size={20} className='hover:text-purple-500 cursor-pointer' />
 
           <div className='flex items-center gap-2'>
             <div className='text-end'>

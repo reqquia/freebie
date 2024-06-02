@@ -31,19 +31,19 @@ const Flags: React.FC = () => {
           text-zinc-900 [--anchor-gap:var(--spacing-1)] focus:outline-none'
         >
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <Flag code='bra' height='25' width='25' />
               Português BR
             </button>
           </MenuItem>
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <Flag code='us' height='25' width='25' />
               Inglês
             </button>
           </MenuItem>
           <MenuItem>
-            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-zinc-200 hover:text-zinc-900'>
+            <button className='group flex w-full items-center gap-2 font-[500] rounded-lg py-1.5 px-3 hover:bg-purple-300 hover:text-zinc-900'>
               <Flag code='es' height='25' width='25' />
               Espanhol
             </button>
