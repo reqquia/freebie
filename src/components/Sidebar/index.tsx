@@ -34,7 +34,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const Sidebar: React.FC = () => {
   return (
-    <div className='w-72 h-screen bg-gray-900 text-white flex flex-col'>
+    <div className='w-72 bg-gray-900 text-white flex flex-col'>
       <div className='flex justify-between items-center pb-5 px-3'>
         <Link href='/dashboard' className='py-2'>
           <Image src='/logo.png' width={200} height={50} alt='logo' />
